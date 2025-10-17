@@ -44,8 +44,8 @@ Designed to meet all **HNG Stage 0** test requirements and best practices for cl
 
 ## ✦ Live Links
 
-**Live Demo:** [Add your deployed link here]  
-**Repository:** [Add your GitHub repo link here]
+**Live Demo:** https://hngstage0-ly.netlify.app/
+**Repository:** https://github.com/lateefaayesufu/inception-pc.git
 
 ---
 
@@ -54,6 +54,6 @@ Designed to meet all **HNG Stage 0** test requirements and best practices for cl
 Clone and run locally:
 
 ```bash
-git clone https://github.com/<your-username>/hng-stage0-profile-card.git
+git clone https://github.com/lateefaayesufu/inception-pc.git
 cd hng-stage0-profile-card
 open index.html
