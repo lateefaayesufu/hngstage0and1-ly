@@ -44,8 +44,9 @@ Designed to meet all **HNG Stage 0** test requirements and best practices for cl
 
 ## ✦ Live Links
 
-**Live Demo:** https://hngstage0-ly.netlify.app/
-**Repository:** https://github.com/lateefaayesufu/inception-pc.git
+- **Live Demo:** https://hngstage0-ly.netlify.app/
+
+- **Repository:** https://github.com/lateefaayesufu/hngstage0-ly
 
 ---
 
