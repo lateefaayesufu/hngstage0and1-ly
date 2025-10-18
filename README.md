@@ -54,6 +54,8 @@ Designed to meet all **HNG Stage 0** test requirements and best practices for cl
 Clone and run locally:
 
 ```bash
-git clone https://github.com/lateefaayesufu/inception-pc.git
-cd hng-stage0-profile-card
-open index.html
+git clone https://github.com/lateefaayesufu/hngstage0-ly
+cd hngstage0-ly
+open index.html   # Mac
+start index.html  # Windows
+
