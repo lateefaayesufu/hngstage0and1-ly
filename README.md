@@ -1,62 +1,104 @@
-# HNG Stage 0 – Profile Card
+# HNG Stage 1 – Multi-Page Web Application
 
-A responsive, accessible profile card built with **semantic HTML**, **modern CSS**, and **vanilla JavaScript**.  
-Designed to meet all **HNG Stage 0** test requirements and best practices for clean, readable markup.
+This is the continuation of my **Stage 0 Profile Card** project.  
+Stage 1 extends the original single-page component into a **multi-page, accessible, responsive website** with two new pages — a **Contact Form** and an **About Me** page — built using semantic HTML, modern CSS, and vanilla JavaScript.
+
+---
+
+## ✦ Overview
+
+The project now includes three connected pages:
+
+1. **Home / Profile Page** – the Stage 0 profile card.  
+2. **Contact Page** – a form with validation and success/error handling.  
+3. **About Page** – a reflective write-up structured with semantic sections.
+
+Navigation links connect all three for a seamless user flow.
 
 ---
 
 ## ✦ Features
 
-- Semantic layout using `<article>`, `<header>`, `<figure>`, `<nav>`, and `<section>`
-- Real-time timestamp in **milliseconds** 
-- Fully responsive for all screen sizes
-- Keyboard-accessible and focus-visible links
-- Animated gradient background and soft floating avatar glow
-- Interactive hover states on buttons and list items
-- Lightweight — no frameworks, no libraries, no bloat
+- Consistent site-wide layout and navigation  
+- Semantic HTML structure with accessible labels and ARIA links  
+- Fully responsive design (mobile → desktop)  
+- Contact form with JavaScript validation and dynamic messages  
+- About page with clear sections for reflection  
+- Keyboard-friendly navigation and visible focus styles  
+- No frameworks or libraries — 100% HTML, CSS, and JS  
 
 ---
 
-## ✦ Required `data-testid` Attributes
+## ✦ Page Details
 
-| Element | Data Test ID |
+### 🡒 **Contact Page**
+Form includes:
+- Full name (`test-contact-name`)  
+- Email (`test-contact-email`)  
+- Subject (`test-contact-subject`)  
+- Message (`test-contact-message`)  
+- Submit button (`test-contact-submit`)  
+- Error messages (`test-contact-error-<field>`)  
+- Success message (`test-contact-success`)
+
+**Validation Rules**
+- All fields required  
+- Valid email format (e.g., `name@example.com`)  
+- Message ≥ 10 characters  
+- Success message only after valid input
+
+**Accessibility**
+- Every input has a `<label>` linked with `for`  
+- Error messages tied to inputs via `aria-describedby`  
+- Entire form is keyboard-accessible
+
+---
+
+### 🡒 **About Page**
+Sections and their `data-testid` values:
+
+| Section | Data Test ID |
 |----------|--------------|
-| Profile Card | `test-profile-card` |
-| User Name | `test-user-name` |
-| User Bio | `test-user-bio` |
-| User Time | `test-user-time` |
-| User Avatar | `test-user-avatar` |
-| Social Links Container | `test-user-social-links` |
-| Social Link Items | `test-user-social-<network>` |
-| Hobbies List | `test-user-hobbies` |
-| Dislikes List | `test-user-dislikes` |
+| Bio | `test-about-bio` |
+| Goals | `test-about-goals` |
+| Areas of Low Confidence | `test-about-confidence` |
+| Note to Future Self | `test-about-future-note` |
+| Extra Thoughts | `test-about-extra` |
 
+Wrapped in:
+```html
+<main data-testid="test-about-page">
 
----
+Each section uses proper headings (<h2>, <h3>) and paragraphs for readability.
 
-## ✦ Tech Stack
+✦ General Accessibility & Semantics
 
-- **HTML5**
-- **CSS3** (Flexbox + Grid)
-- **Vanilla JavaScript**
+Uses <main>, <section>, <header>, <nav>, <form>, <label>
 
----
+Includes descriptive alt text for all images
 
-## ✦ Live Links
+Visible focus states for interactive elements
 
-- **Live Demo:** https://hngstage0-ly.netlify.app/
+Responsive via Flexbox + Grid
 
-- **Repository:** https://github.com/lateefaayesufu/hngstage0-ly
+Minimal, readable, maintainable codebase
 
----
+✦ Tech Stack
 
-## ✦ Local Setup
+HTML5
 
-Clone and run locally:
+CSS3 (Flexbox + Grid)
 
-```bash
-git clone https://github.com/lateefaayesufu/hngstage0-ly
-cd hngstage0-ly
+Vanilla JavaScript
+
+✦ Live Links
+
+Live Demo: https://hngstage0and1-ly.netlify.app/
+
+Repository: https://github.com/lateefaayesufu/hngstage0and1-ly
+
+✦ Local Setup
+git clone https://github.com/lateefaayesufu/hngstage0and1-ly
+cd hngstage0and1-ly
 open index.html   # Mac
 start index.html  # Windows
-
